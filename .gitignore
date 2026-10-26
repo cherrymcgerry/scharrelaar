@@ -1,0 +1,10 @@
+/scharrel
+/scharrel.exe
+/dist/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+/testdata/live/
+.idea/
+.vscode/

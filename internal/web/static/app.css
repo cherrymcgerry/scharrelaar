@@ -1,0 +1,182 @@
+:root {
+  color: #221e1a;
+  background: #f3efe6;
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  line-height: 1.45;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0 auto;
+  max-width: 42rem;
+  padding: 1.5rem 1.25rem 3rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: baseline;
+  border-bottom: 1px solid #d9d1c3;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+}
+
+.mark {
+  font-family: Palatino, "Iowan Old Style", Georgia, serif;
+  font-size: 1.7rem;
+  margin: 0;
+}
+
+.tag, #where, .hint, .foot {
+  color: #5c564c;
+  margin: 0.15rem 0 0;
+}
+
+h2 {
+  font-family: Palatino, "Iowan Old Style", Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin: 0 0 0.6rem;
+}
+
+button, input, textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  background: #1f6b4a;
+  color: #f7f4ee;
+  border: 1px solid #1f6b4a;
+  border-radius: 4px;
+  padding: 0.45rem 0.85rem;
+  cursor: pointer;
+}
+
+button:disabled { opacity: 0.6; cursor: default; }
+
+button.secondary, button.danger {
+  background: transparent;
+  color: #221e1a;
+  border-color: #c9c0b2;
+}
+
+button.danger { color: #8a2e24; border-color: #e0c2bc; }
+
+input[type="text"], input[type="password"], textarea {
+  display: block;
+  width: 100%;
+  margin-top: 0.35rem;
+  padding: 0.5rem 0.6rem;
+  border: 1px solid #c9c0b2;
+  border-radius: 4px;
+  background: #fffdf8;
+}
+
+textarea { min-height: 5.5rem; resize: vertical; }
+
+.row, .actions { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.8rem; }
+
+.question, .result, .card, .watch, .panel {
+  background: #fffdf8;
+  border: 1px solid #e3dcd0;
+  border-radius: 6px;
+  padding: 0.9rem 1rem;
+  margin: 0.8rem 0;
+}
+
+label.option {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  margin: 0.35rem 0;
+}
+
+.qerr { color: #8a2e24; min-height: 1.2em; margin: 0.4rem 0; }
+
+.log {
+  max-height: 9rem;
+  overflow: auto;
+  white-space: pre-wrap;
+  background: #ebe4d6;
+  border-radius: 4px;
+  padding: 0.6rem 0.7rem;
+  font-size: 0.88rem;
+}
+
+.summary { white-space: pre-wrap; margin: 0; }
+
+.card img { display: block; width: 180px; height: 180px; margin-top: 0.6rem; background: white; }
+
+.watch {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.watch h3 { margin: 0; font-size: 1rem; }
+.watch .meta { color: #5c564c; margin: 0.15rem 0 0; font-size: 0.92rem; }
+
+.paused { opacity: 0.7; }
+
+.foot { margin-top: 2rem; font-size: 0.88rem; }
+
+a { color: #1f6b4a; }
+
+button.text {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  font-weight: 600;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+}
+
+button.text:hover { text-decoration: underline; }
+
+.filters { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.6rem 0 1rem; }
+
+.filters button[aria-pressed="true"] {
+  background: #1f6b4a;
+  color: #f7f4ee;
+  border-color: #1f6b4a;
+}
+
+.listing h3 { margin: 0 0 0.2rem; font-size: 1.05rem; }
+
+.decision { margin: 0.35rem 0; }
+
+.decision.alerted { color: #1f6b4a; font-weight: 600; }
+
+.findings { margin: 0.4rem 0 0; padding-left: 1.1rem; }
+
+.finding { margin: 0.2rem 0; }
+
+.finding .status { font-weight: 600; }
+
+.finding.met .status { color: #1f6b4a; }
+
+.finding.unmet .status { color: #8a2e24; }
+
+.finding.unknown .status { color: #6a5a38; }
+
+.quote { color: #3d3832; }
+
+.alerts h2 { display: flex; align-items: baseline; gap: 0.5rem; }
+
+.state {
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.1rem 0.55rem;
+}
+
+.state.on { background: #dcebe2; color: #1f6b4a; }
+
+.state.off { background: #efe1d9; color: #8a2e24; }
